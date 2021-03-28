@@ -2,68 +2,68 @@
 // const prompt = require("prompt-sync")();
 // // Q1.Sum numbers from the visitor.
 
-// let num1 = parseFloat(prompt("enter first number:", ""));
-// let num2 = parseFloat(prompt("enter second number:", ""));
-// console.log(num1 + num2);
+let num1 = parseFloat(prompt("enter first number:", ""));
+let num2 = parseFloat(prompt("enter second number:", ""));
+console.log(num1 + num2);
 
-// // Q2.Repeat until the input is a number
+// Q2.Repeat until the input is a number
 
-// /**//
-//  * Read number from the user.
-//  * @returns {number} Display number
-//  */
-// function readNumber() {
-//     let num;
+/*
+ * Read number from the user.
+ * @returns {number} Display number
+ */
+function readNumber() {
+    let num;
 
-//     do {
-//         num = prompt("Enter a number please?", 0);
-//     } while (!isFinite(num));
+    do {
+        num = prompt("Enter a number please?", 0);
+    } while (!isFinite(num));
 
-//     if (num === null || num === " ") return null;
+    if (num === null || num === " ") return null;
 
-//     return +num;
-// }
+    return +num;
+}
 
-// console.log(`Read: ${readNumber()}`);
-
-
-
-// // Q3.An occasional infinite loop.
-// let i = 0;
-// while (i < 11) {
-//     i += 0.2;
-//     if (i > 9.8 && i < 10.2)
-//         console.log(i);
-// }
+console.log(`Read: ${readNumber()}`);
 
 
-// //A random number from min to max
-// /**
-//  * Display random number.
-//  * @param {Number} min input minimum number
-//  * @param {Number} max input max number
-//  * @returns {Number} Random number
-//  */
-// function randomNum(min, max) {
-//     return min + Math.random() * (max - min);
-// }
 
-// // console.log(randomNum(1, 5));
+// Q3.An occasional infinite loop.
+let i = 0;
+while (i < 11) {
+    i += 0.2;
+    if (i > 9.8 && i < 10.2)
+        console.log(i);
+}
 
-// //////////////////////////A random integer from min to max
-// /**
-//  * Display random integer.
-//  * @param {Number} min input minimum number
-//  * @param {Number} max input max number
-//  * @returns {Number} Random integer
-//  */
-// function randomInt(min, max) {
 
-//     let rand = min + Math.random() * (max + 1 - min);
-//     return Math.floor(rand);
-// }
+//A random number from min to max
+/**
+ * Display random number.
+ * @param {Number} min input minimum number
+ * @param {Number} max input max number
+ * @returns {Number} Random number
+ */
+function randomNum(min, max) {
+    return min + Math.random() * (max - min);
+}
 
-// console.log(randomInt(1, 3));
+// console.log(randomNum(1, 5));
+
+//////////////////////////A random integer from min to max
+/**
+ * Display random integer.
+ * @param {Number} min input minimum number
+ * @param {Number} max input max number
+ * @returns {Number} Random integer
+ */
+function randomInt(min, max) {
+
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+}
+
+console.log(randomInt(1, 3));
 
 
 //////////////////////////Uppercase the first character.
