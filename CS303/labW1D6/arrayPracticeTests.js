@@ -1,15 +1,15 @@
 "use strict";
 
-// /* */comment out the node specific code when going to the browser
-// const assert = require("assert");  //always need this with node
-// const myExports = require("./arrayPractice.js");  //with node need the name of your file with your functions here
-// const doubleNums = myExports.doubleNums;  //do this for all of the functions used in the Mocha tests
-// const doubleAges = myExports.doubleAges;
-// const filterEven = myExports.filterEven;
-// const filterOver10 = myExports.filterOver10;
-// const findEvenNum = myExports.findEvenNum;
-// const findEvenAge = myExports.findEvenAge;
-
+/* comment out the node specific code when going to the browser
+const assert = require("assert");  //always need this with node
+const myExports = require("./arrayPractice.js");  //with node need the name of your file with your functions here
+const doubleNums = myExports.doubleNums;  //do this for all of the functions used in the Mocha tests
+const doubleAges = myExports.doubleAges;
+const filterEven = myExports.filterEven;
+const filterOver10 = myExports.filterOver10;
+const findEvenNum = myExports.findEvenNum;
+const findEvenAge = myExports.findEvenAge;  
+*/
 
 let numArray;
 let peopleArray;
@@ -68,5 +68,15 @@ describe("filter practice", function () {
 
     /* complete the following similar to includes even test */
     it("includes even age -- write this test");
-
+    /* complete the following similar to includes even test */
+    //it("includes even age -- write this test");
+    it("includes even", function () {
+        assert.strictEqual(numArray.includes(100), false);
+        assert.strictEqual(numArray.includes(300), true);
+    });
+    it("find even age ", function () {
+        // assert.deepEqual(includesEvenAge(peopleArray),[{ name: "William", age: 6 },{ name: "Barney", age: 80 }])//{ name: "Barney", age: 80 }]);
+        const peopleOddAge = [{ name: "Sam", age: 13 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 81 }];
+        assert.deepEqual(includesEvenAge.includes({ name: "Sam", age: 10 }), true);
+    });
 });
