@@ -107,10 +107,10 @@ describe("reduce practice", function () {
         assert.deepEqual(maxOfAges(peopleArray), { name: 'Barney', age: 80 });
     });
 
-    it("find max for ages", function () {
+    it("find average of number with even", function () {
         assert.deepEqual(avgAgeEvenNum(peopleArray), 43);
     });
-    it("find max for ages", function () {
+    it("find average of number with odd", function () {
         assert.deepEqual(avgAgeoddNum(peopleArray), 14);
     });
 })
