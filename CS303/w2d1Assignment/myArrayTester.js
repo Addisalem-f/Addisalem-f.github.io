@@ -1,9 +1,5 @@
 
-const assert = require("assert");
-const myExports = require("./myArray.js");
-// let numArray;
-const myMap  = myExports.myMap;
-const oddValue = myExports.oddValue;
+// const assert = requid
 describe("higher oder practice", function () {
     // beforeEach(function () {
     //     numArray = [1, 2, 3, 4, 5];

@@ -1,4 +1,4 @@
-module.exports = { oddValue, myMap, myFilter };
+// module.exports = { oddValue, myMap, myFilter };
 function multiplyAll(elem) {
     return elem * elem
 }
