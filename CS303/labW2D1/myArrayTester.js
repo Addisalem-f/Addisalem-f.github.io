@@ -1,4 +1,4 @@
-
+"use strict"
 // const assert = requid
 describe("higher oder practice", function () {
     // beforeEach(function () {

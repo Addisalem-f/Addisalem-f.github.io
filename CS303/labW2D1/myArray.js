@@ -1,3 +1,4 @@
+"use strict"
 // module.exports = { oddValue, myMap, myFilter };
 function multiplyAll(elem) {
     return elem * elem
