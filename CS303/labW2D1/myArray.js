@@ -1,8 +1,20 @@
 "use strict"
-// module.exports = { oddValue, myMap, myFilter };
+// module.exports = { oddValue, myMap, myFilter, multiplyAll, sumValue, myreduce };
+/**
+ * 
+ * @param {number} elem 
+ * @returns {number}
+ */
+
 function multiplyAll(elem) {
     return elem * elem
 }
+/**
+ * 
+ * @param {array} arr 
+ * @param {function} multiplyAll 
+ * @returns 
+ */
 function myMap(arr, multiplyAll) {
     let newArr = [];
     for (let key of arr) {
@@ -12,7 +24,11 @@ function myMap(arr, multiplyAll) {
     return newArr;
 }
 // console.log(myMap([1, 2, 3, 4, 5], multiplyAll))
-
+/**
+ * 
+ * @param {number} elem 
+ * @returns {boolean}
+ */
 
 function oddValue(elem) {
     if (elem % 2 !== 0) {
@@ -22,6 +38,12 @@ function oddValue(elem) {
     }
 
 }
+/**
+ * 
+ * @param {array} arr 
+ * @param {function} oddValue 
+ * @returns {array}
+ */
 
 function myFilter(arr, oddValue) {
     let newArray = [];

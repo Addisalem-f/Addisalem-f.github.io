@@ -1,9 +1,17 @@
 "use strict"
-// const assert = requid
+// const assert = require("assert");  //always need this with node
+// const myExports = require("./myArray.js");
+// const myMap = myExports.myMap;
+// const myFilter = myExports.myFilter;
+// const myreduce = myExports.myreduce;
+// const multiplyAll = myExports.multiplyAll;
+// const oddValue = myExports.oddValue;
+// const sumValue = myExports.sumValue;
+
+
+
 describe("higher oder practice", function () {
-    // beforeEach(function () {
-    //     numArray = [1, 2, 3, 4, 5];
-    // })
+    
     it("multiply each element", function () {
         assert.deepEqual(myMap([1, 2, 3, 4, 5], multiplyAll), [1, 4, 9, 16, 25])
 
@@ -16,7 +24,7 @@ describe("higher oder practice", function () {
 
     it("it sums values", function () {
 
-        assert.deepEqual(myreduce([1, 2, 3, 4, 5], sumValue), 15)
+        assert.strictEqual(myreduce([1, 2, 3, 4, 5], sumValue), 15)
     })
 
 })
