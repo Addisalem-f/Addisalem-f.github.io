@@ -22,8 +22,8 @@ function doubleAges(arr) {
     return arr.map(age => `${age.age * 2}`)
 }
 
-// let test44 = doubleAges(peopleArray)
-// console.log(test44)
+let test = doubleAges(peopleArray)
+console.log(test)
 
 
 function filterEven(arr) {
