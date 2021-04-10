@@ -1,12 +1,19 @@
 "use strict";
+// const assert = require("assert");  //always need this with node
+// const myExports = require("./calculator.js");
+// const sum = myExports.sum;
+// const sub = myExports.sub;
+// const div = myExports.div;
+// const mul = myExports.mul;
+
 
 
 describe("calculator from constructor function", function () {
-    let calc;  
+    let calc;
     before(function () {
         calc = new Calculator();
-        calc.setValue(10,10)
-        
+        calc.setValue(10, 10)
+
     });
 
     it("the sum of 10 and 10 is 20", function () {
@@ -31,8 +38,8 @@ describe("calculator from constructor function", function () {
         assert.strictEqual(calc.b, 10);
         assert.strictEqual(calc.mul(), 100);
     });
-   
-    
+
+
 });
 
 
@@ -49,12 +56,12 @@ describe("accumulator", function () {
         accumulator.accumulaltor();
         assert.strictEqual(accumulator.initialValue, 25);
         assert.strictEqual(accumulator.increment, 10);
-    });    
+    });
 
     it("checks report", function () {
         const accumulator = new Accumulator(5, 10);
         assert.strictEqual(accumulator.current(), 5);
-    });    
+    });
 
 });
 

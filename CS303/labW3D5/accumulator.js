@@ -1,4 +1,6 @@
+
 "use strict";
+
 
 function Accumulator(initialValue, increment){
 this.initialValue=initialValue;
